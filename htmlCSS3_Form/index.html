@@ -21,7 +21,7 @@
         <br />
 
         <label class="label" for="şifre">Şifreniz</label>
-        <input class="giriş" id="şifre" type="password" name="ad" value="" required="" />
+        <input class="giriş" id="şifre" type="password" name="sifre" value="" required="" />
         <!-- name="ad" >> server'a giden ad degiskenine value=""(kullanicinin girdisi) degeri atanarak gonderilms olur -->
         <!-- required > veri girilmesi zorunlu alandir bos birakilamaz -->
         <br />
@@ -40,9 +40,13 @@
         <textarea name="text-alani" id="adres" rows="10"></textarea>
         <br />
 
-        <button class="btn" type="submit">
+        <!-- buton eklemek icin button etiketi kullanildigi gibi input ile de eklenebilir. 
+            Fakat button etiketi daha kullanislidir icine icon vs eklenebilir  -->
+        <input type="submit" value="Gonder" /> -->
+
+        <!-- <button class="btn" type="submit">
         <i class="far fa-save"></i> Gonder
-      </button>
+        </button> -->
 
         <button class="btn">
         <i type="reset" class="fas fa-trash-alt"></i> Temizle

@@ -22,13 +22,12 @@ body {
     margin-bottom: 20px;
     width: 200px;
     height: 30px;
-    /* her input arasi boslugu margin-bottom ile ayarladik */
+    /* her input uzerinde ki boslugu margin-bottom ile ayarladik */
 }
 
 .label {
     display: block;
-    /* inline olan bir eleman blok hale   
-                   getirilebilir */
+    /* inline olan bir eleman blok hale getirilebilir */
     margin-right: 30px;
 }
 
