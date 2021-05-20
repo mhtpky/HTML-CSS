@@ -1,0 +1,98 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>CARD</title>
+</head>
+
+<!-- ISTEGIDIMIZ CARD'I https://getbootstrap.com/ LINKINDEN KOPYALAYABILIRIZ -->
+
+<!-- ! Elimizde birden fazla nesne varsa ve bunlari sirali olarak yerlestirmek istiyorsak en iyi yontem row col kullanmaktir -->
+
+<body>
+    <div id="banner" class="container-fluid bg-success bg-gradient text-center text-light p-5">
+        <!-- 
+        >> padding ayarini id kullanarak style.css dosyasi yerine su sekilde yapabiliriz
+        <div id="banner" class="container-fluid bg-success p-5 text-white">
+            
+        >> style ile de yapabiliriz
+        <div class="container-fluid bg-success text-white" style="padding: 60px" -->
+
+        <h1 class="display-4">TECHPROED'E HOSGELDINIZ</h1>
+        <p class="lead">IT alaninda ki egitimlerimize bir goz atiniz</p>
+    </div>
+
+    <div class="container mt-4 text-center">
+        <!-- card'lar icin bir row(satir) olusturalim -->
+        <div class="row d-flex justify-content-center">
+            <!-- Her bir card icin de birer .col (sutun) olusturalim -->
+
+            <div class="col-sm-12 col-md-6 col-xl-4 mb-4 d-flex justify-content-center">
+                <div class="card" style="width: 16rem; height: 20rem">
+                    <img src="img/tester.png" class="card-img-top img-fluid w-50 mx-auto" />
+                    <div class="card-body">
+                        <h5 class="card-title">TESTER</h5>
+                        <p class="card-text">
+                            Muhtemelen ulkede ki en iyi tester kursuna hosgeldiniz.
+                        </p>
+                        <a href="#" class="btn btn-success">Detaylar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-xl-4 mb-4 d-flex justify-content-center">
+                <div class="card" style="width: 16rem; height: 20rem">
+                    <img src="img/data-science.png" class="card-img-top img-fluid w-50 mx-auto" />
+                    <div class="card-body">
+                        <h5 class="card-title">DATA SCIENCE</h5>
+                        <p class="card-text">
+                            Muhtemelen dunyada ki en iyi Data-Science kursuna hosgeldiniz.
+                        </p>
+                        <a href="#" class="btn btn-success">Detaylar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-xl-4 mb-4 d-flex justify-content-center">
+                <div class="card" style="width: 16rem; height: 20rem">
+                    <img src="img/developer.png" class="card-img-top img-fluid w-50 mx-auto" />
+                    <div class="card-body">
+                        <h5 class="card-title">DEVELOPER</h5>
+                        <p class="card-text">
+                            Muhtemelen gezegende ki en iyi Developer kursuna hosgeldiniz.
+                        </p>
+                        <a href="#" class="btn btn-success">Detaylar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- img icinde mx-auto ile sagdan soldan resimleri ortalamis olduk  -->
+
+            <!-- inline style yaparken degiskenler arasina ; koyulmalidir 
+                 <div class="card" style="width: 16rem; height: 20rem"> -->
+
+            <!-- Olceklendirma yapmak icin (xl ekranda tamamini, m ekranlarda 2sini kapla 1i alt satirda gorunsun, kck ekranda 1ini kapla(1 col 12 parcayi kaplasin)) 
+                 <div class="col-sm-12 col-md-6 col-xl-4"> -->
+
+            <!-- kucuk ekranda asagiya inen ile ustte ki arasinda margin olmali(mb-4) 
+                 <div class="col-sm-12 col-md-6 col-xl-4 mb-4"> -->
+
+            <!-- nesnelerin ortali olmasi icin 
+            yatay hizalama justify-content / dikey hizalama icin align-items ile yapilir
+            (justify-content kullanabilmek icin d-flex yapilmalidir )
+                 <div class="row d-flex justify-content-center"> -->
+
+            <!-- Hizalamayi row da yapmak istedigimizi vermedi her bir col icin ayri ayri yapmak gerekiyor 
+                 <div class="col-sm-12 col-md-6 col-xl-4 mb-4 d-flex justify-content-center">-->
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
