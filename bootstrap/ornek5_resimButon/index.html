@@ -1,0 +1,107 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <title>Resim - Buton</title>
+</head>
+
+<body>
+    <!-- img-fluid >> resim responsive olur yani ekran boyutuna gore buyuyup kuculme -->
+    <!-- img-thumbnail >> kucuk kucuk resimler haline getirir -->
+    <!-- rounded >> resmin koselerini yuvarlatir -->
+
+    <div class="container mt-4">
+        <!-- mt-4 ile yukardan margin verdik-->
+        <!-- stillendirme kolay olsun diye bir row(satir) olusturalim -->
+        <div class="row">
+            <div class="col">
+                <img class="img-fluid " src="https://images.pexels.com/photos/753626/pexels-photo-753626.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="img-1">
+            </div>
+
+            <!-- resimleri yanyana istiyorsam ayni rowda baska col aciyoruz-->
+            <div class="col">
+                <img class="img-fluid" src="https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="img-2">
+            </div>
+
+            <div class="col">
+                <img class="img-fluid" src="https://images.pexels.com/photos/753325/pexels-photo-753325.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="img-3">
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container mt-4">
+
+        <div class="row">
+            <div class="col">
+                <img class="img-thumbnail" src="https://images.pexels.com/photos/753626/pexels-photo-753626.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="img-1">
+            </div>
+
+            <!-- resimleri yanyana istiyorsam ayni rowda baska col aciyoruz-->
+            <div class="col">
+                <img class="img-thumbnail" src="https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="img-2">
+            </div>
+
+            <div class="col">
+                <img class="img-thumbnail" src="https://images.pexels.com/photos/753325/pexels-photo-753325.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="img-3">
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col">
+                <img id="resim-1" class="img-fluid border border-danger border-2 rounded-3" src="https://images.pexels.com/photos/753626/pexels-photo-753626.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="img-1">
+            </div>
+
+            <div class="col">
+                <img class="img-fluid border border-danger border-2 rounded-pill" src="https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="img-2">
+            </div>
+
+            <div class="col">
+                <img class="img-thumbnail" src="https://images.pexels.com/photos/753325/pexels-photo-753325.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="img-3">
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container mt-4">
+        <button class="btn btn-outline-warning ">TIKLA</button>
+        <button class="btn btn-danger">SIL</button>
+        <button class="btn btn-success">GONDER</button>
+        <button type="button" class="btn btn-outline-primary btn-lg d-block w-100 mt-4"><a href="#resim-1" class="text-decoration-none"> KAYDET </a></button>
+        <!-- icerden(yani projemizden) link vermek icin yukarida ki gibi -->
+        <!-- text-decoration-none >> kaydet yazisi altinda ki cizgiyi kaldirmak icin -->
+
+        <!-- Harici link vermek icin -->
+        <button class="btn btn-outline-danger mt-4">
+            <a href="https://www.pexels.com/tr-tr/arama/meat/">TIKLA</a>
+        <!-- d-block ile alt satira indirebiliriz -->
+        <!-- btn-outline-primary >> outline ici bos uzerine gelince renk degistirir/ primary:mavi renk-->
+        <!-- Tum ekrani kaplayan bir buton yapmak icin w-100 >> tum container'i kaplar -->
+    </div>
+
+
+    <!-- Buton grubu olusturalim -->
+    <div class="container mt-4">
+        <div class="btn-group">
+            <a href="#" class="btn btn-warning">1</a>
+            <a href="#" class="btn btn-success">2</a>
+            <a href="#" class="btn btn-info">3</a>
+        </div>
+    </div>
+
+
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

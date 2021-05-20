@@ -1,0 +1,77 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <title>Display</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="h1 text-center text-info bg-secondary">Display</h1>
+        <!-- ** Aynı CSS'de olduğu gibi Bootstrap ile de nesnelerin 
+            display özellikleri değiştirilebilir. 
+            Display classları hakkında ayrıntılı bilgi için 
+        ! https://getbootstrap.com/docs/5.0/utilities/display/ -->
+
+        <div class="container text-center">
+            <!-- Sadece xs ekranlarda gözükecek bir element tasarlayınız. -->
+            <!-- sm buyuklugune geldiginde none ol(gozukme) diyecegiz -->
+            <div class="d-sm-none bg-danger">1</div>
+
+            <!-- Sadece xs ekranlarda gözükmeyecek bir element tasarlayınız. -->
+            <div class="d-none d-sm-block bg-warning">2</div>
+
+            <!-- Sadece md ekranlarda gözükecek bir element tasarlayınız. -->
+            <!-- d-none demek xs iken gozukme md de gozuk lg ve daha buyuklerde oldugunda yine gozukme -->
+            <div class="d-none d-md-block d-lg-none bg-info">3</div>
+
+            <!-- Sadece md ekranlarda gözükmeyecek bir element tasarlayınız. -->
+            <div class="d-md-none d-lg-block bg-success">4</div>
+
+            <!-- Sadece md+ ekranlarda gözükecek bir element tasarlayınız. -->
+            <div class="d-none d-md-block bg-primary">5</div>
+        </div>
+    </div>
+
+    <div class="container-fluid d-flex justify-content-between mt-3 bg-dark text-light p-2 fixed-bottom mb-4">
+        <!-- container-fluid yaparak tum ekrani kaplamasini sagladik -->
+        <!-- d-flex sag soldan ortalamis oldu -->
+        <!-- justify-content-between >> icerikte ki herbir iconu saga sola yasladiktan sonra ortayi dagitir -->
+        <!-- mt-3 ustten 3 birim aciklik ver demektr >> margin top 3 -->
+        <!-- p-2 ic bosluklari ayarlamak icindir >> padding 2 birim -->
+        <!-- fixed-bottom iletisim cubugunu en altta yerlestirmeyi saglar -->
+
+        <!-- ? fixed-top sayfanın üzerine fixed-bottom ise sayfanın altına nesneleri yapıştırır.
+        ? Ayrıntılı bilgi için 
+        ! https://getbootstrap.com/docs/4.0/utilities/position/ -->
+
+        <!-- ** margin ve padding hakkında ayrıntılı bilgi için
+        ! https://getbootstrap.com/docs/5.0/utilities/spacing/ -->
+
+        <div>
+            <i class="fas fa-phone-alt text-warning"></i>
+            <!-- inline kullanmamizin sebebi yazinin ayni satirla olmasi.block kullanirsak asagi iner -->
+            <span class="d-none d-md-inline">+90 555 55 55</span>
+            <!-- span inline yazi icin kullanilan etikettir. Bir alan icine baska bir alan yazmaya yarar -->
+
+            <i class="fab fa-whatsapp text-warning ms-3"></i>
+            <span class="d-none d-md-inline">+90 555 55 55</span>
+        </div>
+
+        <div>
+            <i class="fab fa-twitter mx-2 text-info "></i>
+            <i class="fab fa-youtube mx-2 text-info"></i>
+            <i class="fab fa-instagram mx-2 text-info"></i>
+            <span class="d-none d-lg-inline">#techproed</span>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>HTML | TABLO EKLE | CSS Inline</title>
+
+    <style>
+        /* BU alan CSS kodları içerir.. Yani CSS kodlari style etiketleri arasina yazilir */
+        /* CSS Selector'ler ile istenilen HTML elemanına stillendirme yapılablir */
+        /* Style etiketi ile yapılan sitllendirmeler sadece bu dosya için geçerli olur. 
+           Eğer tüm proje için global bir stillendirme istersek o zaman harici bir 
+           .CSS dosyası oluşturmak ve bu dosyayı HTML'e import etmek gerekir*/
+        /* CSS'de * hersey demektir. Yazdigimiz herseyi sayfanin ortasinda gosterelim. 
+           Yaptigimiz stillendirme de ozelde bir degisiklik yapiyorsak aktif olan o olacaktir. Ozel her zaman daha aktiftir */
+        
+        * {
+            text-align: center;
+        }
+        
+        h1 {
+            color: green;
+            font-size: 25px;
+            font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+            margin-top: 50px;
+        }
+        
+        p {
+            color: blue;
+        }
+        
+        #p1 {
+            color: blueviolet;
+        }
+        
+        .p2 {
+            color: aqua;
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-size: 30px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>TABLO EKLEME</h1>
+    <h1>CSS stillendirme</h1>
+
+    <!-- !HTML CSS'de stillendirme yapilirken kebab-case(küçük harflerden oluşur ve kelimeler arasında – (tire) işareti) kullanilir -->
+
+    <p>Selector'suz paragraf</p>
+
+    <!-- id bir CSS selector'dur ve tek element stillendirilecek ise kullanmak daha mantıklıdır. 
+        id'ye erişim icin stillendirmede # kullanlır -->
+    <p id="p1">Bu ID selectorlu bir pragrafdır</p>
+
+    <!-- class selectorü ise grup stilendirmesi için  kullanılır. -->
+    <!-- class'a erisim icin stillendirmede .(nokta) kullanilir -->
+    <p class="p2">Bu da CLASS selectorlu bir pragrafdır</p>
+    <p class="p2">CSS HTML'e göre daha fazla detay içermektedir.</p>
+</body>
+
+</html>

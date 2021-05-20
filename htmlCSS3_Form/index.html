@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Formlar</title>
+</head>
+
+<body>
+    <h1>FORMLAR</h1>
+    <form action="kaydet.php">
+        <!-- action : form submit edilirse server'da ki kaydet.php dosyasina bilgileri kaydet dmektir -->
+        <label class="label" for="ad">Adınız: </label>
+        <!-- label doldurulacak kutucugun onunde yazmasini istedigimiz yonlendirici yazi eklemek icindir -->
+        <input class="giriş" id="ad" type="text" maxlength="20" name="adı" placeholder="isim giriniz" />
+        <!-- input'a id verdik ve label'i o id ile input'a baglams olduk 
+            Adiniz yazisi uzerine tiklayinca isim kutusu aktif hale geliyor -->
+        <br />
+
+        <label class="label" for="şifre">Şifreniz</label>
+        <input class="giriş" id="şifre" type="password" name="ad" value="" required="" />
+        <!-- name="ad" >> server'a giden ad degiskenine value=""(kullanicinin girdisi) degeri atanarak gonderilms olur -->
+        <!-- required > veri girilmesi zorunlu alandir bos birakilamaz -->
+        <br />
+
+        <label class="label" for="email">Email</label>
+        <input class="giriş" id="email" type="email" name="email" value="" />
+        <br />
+
+        <label class="label" for="sayı">Yaşınız</label>
+        <input class="giriş" id="sayı" type="number" name="yaş" value="" min="0" max="100" />
+        <!-- name ve value gonder butonuna bastigimizda server'a giden verileri kaytta tutuyor -->
+        <!-- ! for ile id ayni olmalidir fakat name ayni olmak zorunda degildir -->
+        <br />
+
+        <label class="label" for="adres">Adres</label><br />
+        <textarea name="text-alani" id="adres" rows="10"></textarea>
+        <br />
+
+        <button class="btn" type="submit">
+        <i class="far fa-save"></i> Gonder
+      </button>
+
+        <button class="btn">
+        <i type="reset" class="fas fa-trash-alt"></i> Temizle
+      </button>
+    </form>
+</body>
+
+</html>

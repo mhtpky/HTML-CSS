@@ -1,0 +1,55 @@
+/* yildiz(*) kullanmak herseye uygula demektir */
+
+* {
+    text-align: center;
+}
+
+h1 {
+    color: red;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin-top: 30px;
+    /* ustte ki elemanla arasinda ki mesafeyi gosterir*/
+}
+
+
+/*  nokta(.) class kullanirken, diyez(#) ise id ye erisirken kullanilir 
+    
+    border SIRALAMA >> cizgi kalinligi(3px) / cizgi turu(solid) / renk(grey) seklinde olmaldir 
+    solid(duz cizgi) | double | dashed */
+
+.tablo {
+    border: 4px solid grey;
+    border-collapse: collapse;
+    /* border-collapse 2 border cizgisini birlestirip tek cizgi gibi gosteriyor */
+    width: 50%;
+    /* yuzdelik dilim sayfaya gore hesaplanir*/
+    margin-left: auto;
+    margin-right: auto;
+    /*margin left right ile sol ve sagdan otomatik boslukla hizalama yapilabilir*/
+}
+
+
+/*  Birden fazla attribute'e ayni stillendirme yapilacaksa virgul ile 
+ayrilarak yazilabilir */
+
+th,
+td {
+    border: 4px solid grey;
+}
+
+th {
+    background-color: yellowgreen;
+}
+
+
+/* bazi elemanlarin bazi ozelliklerini kullanmak icin yanina : koyarak PSEUDO CLASS'lar kullanilir */
+
+tr:hover {
+    /* hover >> mouse satirin uzerine gidince rengi degissin*/
+    background-color: rgb(197, 194, 194);
+}
+
+tr:nth-child(even) {
+    /*tr'nin n.ci(even>cift olnlari) elemani sec > zebra ozelligi*/
+    background-color: rgb(240, 237, 237);
+}

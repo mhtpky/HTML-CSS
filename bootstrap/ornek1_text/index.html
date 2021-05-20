@@ -1,0 +1,77 @@
+<!-- html css js kutuphanesi iceren bir frameworkdur
+    responsive(uyumlu,esnek) tasarim yapmayi kolaylastirir.
+    Sayfayi kucultsek de uyumlu olarak sayfa duzeni degisir.
+    her tarayiciya uyum saglar browser uyumsuzluklarini ortadan kaldirir
+  !  https://getbootstrap.com/ >> DOC tikladik>Starter template>copy -->
+
+<!-- Bootstrap kütüphanesini CDN olarak kullanmak için gerekli eklemeleri HTML sayfamıza eklemeliyiz. 
+     Aşağıdaki linkte Bootstrap bizim için bir başlangıç template sayfası sunmaktadır.
+   ! https://getbootstrap.com/docs/4.3/getting-started/introduction/  -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- responsive bir sayfa yapacaksak altta ki satir OLMAZSA OLMAZ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!-- cdn(Content Delivery Network- icerik dagitim agi ) 
+        > bir server sitemidir video resim gibi medyalari saklayan server sistemidir-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- Kendi stillendirmemeiz varsa var olan stil dosyasinin altina yazmamaiz gerekir
+    Boyle ce altta olan usttekininin onune gecer ve uygulanir. 
+    Yani uygulanmasini istedigimiz stili alta eklememiz gerekir -->
+    <link rel="stylesheet" href="style.css">
+    <title>Bootstrap Text</title>
+</head>
+
+<body>
+    <div class="container bg-secondary">
+
+        <h1 class="h1 text-center text-danger">Bootstrap Text</h1>
+        <!-- ** Boostrapte bir çok yazı stillendirme ve renlendirme class’ı mevcuttur.
+      ? Text stillendirmeleri hakkında ayrıntılı bilgi için
+      ! https://getbootstrap.com/docs/4.3/utilities/text/
+      * Renkler hakkında ayrıntılı bilgi için
+      ! https://getbootstrap.com/docs/4.3/utilities/colors/ -->
+
+        <p class="text-end text-warning fs-4">Bootstrap web sitesi yapmayi kolaylastiriyor</p>
+        <!-- text-end saga bitisik yazar
+        text-warning rengi sari yapar
+        fs-4 yazi boyutunu ayarlar -->
+
+        <p class="h2 text-start text-info">Lorem ipsum dizgi ve baski endustrisinde kullanilar migir metinlerdir</p>
+
+        <p class="h3 text-center text-danger">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero eum blanditiis corrupti autem voluptate, ex quis. Blanditiis et inventore, fuga perferendis ipsam rerum optio facilis consequuntur, ea id quod at.</p>
+
+        <p class="display-1 bg-warning">Lorem ipsum dolor sit amet.</p>
+
+        <!-- text-muted yaziyui siliklestiriyor -->
+        <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, facere.</p>
+
+        <!-- text-light yaziyi beyaz yapti, siyah background verdik,fw-bold kalinlastirdi, italic yaptik, h2 boyut-->
+        <p class="text-light bg-dark fw-bolder fst-italic h2s">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, blanditiis.</p>
+    </div>
+
+    <!-- yeni bir container olusturuyoruz. 
+       ! container-fluid yazip enter deyince otomatik div olusturur
+        marginsiz bir sekilde sayfa alaninin tamamini kapsayacak -->
+    <div class="container-fluid bg-success">
+        <p class="text-uppercase fs-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi repellendus nihil libero aut voluptatem.</p>
+
+        <p class="text-capitalize text-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi et perspiciatis explicabo deleniti amet?</p>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

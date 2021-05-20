@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <title>İlk Sayfam</title>
+</head>
+
+<body style="background-color: blanchedalmond">
+    <h1>HTM</h1>
+    <h2>CSS</h2>
+    <h3>JS</h3>
+    <h4 style="font-size: 50px; color: brown">Java</h4>
+    <!-- br etiketi kursoru bir satır aşağıya indirir -->
+    <!-- <br> <br> -->
+
+    <!-- ! style attribute ile verilen özellikler aslında CSS stillendirmeleridir. Bu şekildeki stillendirmeye Inline CSS denilir. -->
+    <!-- bu sekilde stillendirmenin dezavantaji sadece bu h2 icin gecerli olmasidir -->
+
+    <h2 style="color: blueviolet">HTML NEDİR?</h2>
+    <p>HTML Dersine Hoşgeldiniz..</p>
+    <p style="color: blue">
+        Bugün <strong>HTML </strong> görmeye başladık. <em>HTML</em> bir
+        <del>programlama</del> dili değildir. Sadece bir
+        <mark style="color: chartreuse">işaretleme</mark> dilidir.
+    </p>
+
+    <h2 style="color: red">LİSTE OLUŞTURMA</h2>
+    <p>HTML'DE SIRALI LISTE OLUSTURMAK ICIN &ltol&gt ETIKETI KULLANILIR.</p>
+
+    <!-- ol >> ordered list sirali liste olusturmak istenirse kullanilir -->
+    <ol type="A" start="2">
+        <!-- Numaralı liste oluşturduk  -->
+        <!-- type:liste siralama turunu, start ise kacinci basmaktan baslayacagini gozterir. 2 dedigimiz icin B den basladi -->
+        <!-- 1,A,I,i kullanilabilir. Baslangic icin ise start="rakam" -->
+        <li>Ahmet</li>
+        <li>Mehmet</li>
+        <li>İsmet</li>
+        <li>Saffet</li>
+    </ol>
+
+    <p>MADDELI(SIRASIZ) LISTE OLUSTURMAK ICIN &ltul&gt ETIKETI KULLANILIR.</p>
+    <!-- ul >> unordered sirasiz liste olusturmak istenirse kullanilir -->
+    <ul type="circle">
+        <!-- disc, square, circle -->
+        <li>Adana</li>
+        <li>Urfa</li>
+        <li>Antep</li>
+    </ul>
+
+    <p>IC ICE LISTE OLUSTURMA</p>
+    <ol>
+        <li>
+            Istanbul
+            <ul>
+                <li>Fatih</li>
+                <li>Üsküdar</li>
+                <li>Esenyurt</li>
+            </ul>
+        </li>
+        <li>
+            Sakarya
+            <ul>
+                <li>Sapanca</li>
+                <li>Serdivan</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h2>LINK VERME</h2>
+    <p>Link vermek icin &lta&gt etiketi kullanilir</p>
+
+    <a href="https://www.google.com/" target="_blank">Google icin tikla</a>
+    <!-- a gibi span gibi bazi etiketler inline etiketlerdir yani satir asagiya inmeden ayni satira yazar -->
+    <br />
+    <br />
+
+    <a href="gorseller.html" target="_blank"> Gorseller icin tiklayiniz</a>
+    <!-- target="_blank" >> linki yeni sayfada acabilmek icin yazilir -->
+    <br />
+    <br />
+
+    <a href="assets/img/1200px-Flag_of_Turkey.svg.png" target="_blank">Bayrak resmi icin tiklayiniz</a
+    >
+    <br />
+    <br />
+
+    <a href="mailto:enerka2207@gmail.com">Mail icin tiklayiniz</a>
+    <br />
+    <br />
+
+    <a href="https://wa.me/+306985659010">Whatsapp</a>
+    <br />
+    <br />
+
+    <a href="tel:+306985659010">Telefonla ara</a>
+</body>
+
+</html>
